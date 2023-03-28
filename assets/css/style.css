@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-}
+} 
 
   /* brand color palette */
 :root {
@@ -15,20 +15,88 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--primary);
+    color: var(--tertiary);
     background-color: var(--light);
     line-height: 1.5;
 }
 
-header {
-    display: flex;
-    background-color: rgb(55, 55, 58);
-    color: aliceblue;
-    padding:  0 0 0;
-    
-    
-} 
-
 .main-header {
+    background-color: var(--tertiary);
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.main-header h1 {
+    margin: 0;
+    background-color: var(--secondary);
+    height: 47px;
+}
+
+nav ul {
+    display:flex;
+    list-style-type:none;
+    justify-content: flex-end;
+    font-weight: bolder;
+    
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+li a {
+    color: var(--secondary);
+}
+
+.sub-header {
+    height: 105px;
+    background-color: rgb(82, 82, 138);
+    position: relative;
+    background-image: url("../imges/02-hero-bg.jpg");
+    background-size: cover;
+}
+
+.sub-header p {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.about-me-section {
+    display: flex;
+}
+
+.about-me-section h2 {
+    display: flex;
+    flex: 0 0 20%;
+    justify-content: center;
+}
+
+.work-section {
+    display: flex;
+}
+
+.work-section h2 {
+    display: flex;
+    flex: 0 0 20%;
+    justify-content: center;
+}
+
+.work-section figure {
+    background-color: blue;
+}
+
+.surf-report {
+    display: flex;
+    height: 250px;
+    width: 500px;
+    
     
 }
